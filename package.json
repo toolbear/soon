@@ -1,0 +1,32 @@
+{
+  "name":         "soon",
+  "description":  "the task timer that hearts developers",
+  "version":      "0.0.1",
+  "homepage":     "https://github.com/toolbear/soon",
+  "author":       "Tim Taylor <tim@tool-man.org> (https://github.com/toolbear)",
+  "bugs":         "https://github.com/toolbear/soon/issues",
+  "bin":          "./bin/soon",
+  "preferGlobal": true,
+  "private":      true,
+  "repository": {
+    "type": "git",
+    "url":  "https://github.com/toolbear/soon.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "^1.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url":  "http://toolbear.mit-license.org"
+    }
+  ],
+  "keywords": [
+    "soon",
+    "cli",
+    "timer",
+    "productivity",
+    "pomodoro"
+  ]
+}
