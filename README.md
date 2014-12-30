@@ -317,3 +317,10 @@ $ soon --interactive
 ⎇ give-eeyore-a-hug
 47 minutes remaining
 ```
+
+## TODO
+
+* [x] write the README first
+* [ ] find task lists in README
+* [ ] find task lists in TODO
+* [ ] move these tasks to TODO.md
