@@ -8,7 +8,9 @@ Soon is a task timer with opinions on how to optimize your development time for:
 * mental and physical well being
 * hugs & tacos
 
-The only opinion Soon has about task or to-do lists is that you should use them. Out of the box Soon supports [GFM task lists][GFM task lists], git feature branches, GitHub pull requests, and GitHub issues. Your favorite task list software is supported via plugins. Mac users may be interested in the plugins for [OS X Reminders][soon-osx-reminders] or [Things][soon-things] plugins.
+The only opinion Soon has about task or to-do lists is that you should use them.
+
+Out of the box Soon finds tasks from [GFM task lists][GFM task lists], git feature branches, GitHub pull requests, and GitHub issues. Mac users may be interested in plugins for [Reminders][soon-osx-reminders] or [Things][soon-things]. Authoring a plugin for your favorite task list manager is straightforward.
 
 On the surface Soon has similarities to [a popular technique][pomodoro]. Our scope is smaller and our approach different; Soon is a tool not a methodology.
 
