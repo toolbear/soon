@@ -77,3 +77,21 @@ $ soon ls --completed⏎
 
 [node]: http://nodejs.org
 [oh-my-zsh]: http://ohmyz.sh
+
+### Philosophy and Motivation
+
+The stages of sleep follow a 90-120 minute cycle and research suggests this [pertinent periodicity][ultradian rhythm] persists when we're awake; our alertness, ability to focus, and energy level rise and fall in time. Totally different research showed that professional violinists and athletes have similar schedules; the top performers practiced or trained intensely for 90 minutes followed by 15-20 minutes of rest (they also slept 8 hours a night and took a short nap during the day).
+
+[ultradian rhythm]: http://en.wikipedia.org/wiki/Ultradian_rhythm
+
+Our experience coding in short sessions — 25 minutes long — often left us feeling that the break arrived right as things [started flowing][flow]. Increasingly breaks felt like disruptions. We stopped using the timer. In its abscense we coded long past the point of diminshing mental returns; we sat [sedentary for hours at a time][too much sitting]; we forgot to eat. Even the [lazy panda eats][lazy panda eats]! We were sad pandas.
+
+[flow]: http://en.wikipedia.org/wiki/Flow_(psychology)
+[too much sitting]: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3404815/ "Too Much Sitting: The Population-Health Science of Sedentary Behavior"
+[lazy panda eats]: https://www.youtube.com/watch?v=PMgN6-CUoLQ
+
+What about longer sessions? Say, 90 minutes long with 15 minute breaks? Yes, that will do nicely.
+
+We've plenty of tasks documented in `TODO.md` already. Plus a handful of issues in GitHub and the occasional contributed pull request. Shall we skip tracking those in a second place? We shall.
+
+We'll revisit sleep in a little bit.
