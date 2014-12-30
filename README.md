@@ -74,7 +74,9 @@ $ soon ls --completed⏎
   ```console
   . <(soon completion)
   ```
+4. Install [hub][hub] and alias `git` to `hub`
 
+[hub]: https://hub.github.com "the command-line wrapper for git"
 [node]: http://nodejs.org
 [oh-my-zsh]: http://ohmyz.sh
 
@@ -100,7 +102,7 @@ We'll revisit sleep in a little bit.
 
 1. **Use git**
 
-  Soon relies on `git` to find the root of your current project.
+  Soon relies on `git` to find the root of your current project, determine the current branch, and detect feature branches. It relies on `git` wrapped by [hub][hub] to find pull requests and issues.
 
 2. **Pick an available task. Begin work.**
 
