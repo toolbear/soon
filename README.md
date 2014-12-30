@@ -55,3 +55,25 @@ $ soon ls --completed⏎
 ★ Ride balloon to beehive
 12 minutes until your next break
 ```
+
+## Using Soon for Great Success
+
+### Getting Started
+
+1. Install [Node.js][node]
+2. Install `soon` globally
+  ```console
+  $ sudo npm install -g soon
+  ```
+3. Run `. <(soon completion)` to enable tab completion for your current shell.
+  [Oh-My-Zsh][oh-my-zsh] users should enable the `soon` plugin.
+  ```zsh
+  plugins=(git osx terminalapp soon)
+  ```
+  Everyone else should add the following to `~/.bashrc` or `~/.zshrc`.
+  ```console
+  . <(soon completion)
+  ```
+
+[node]: http://nodejs.org
+[oh-my-zsh]: http://ohmyz.sh
