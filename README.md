@@ -258,3 +258,9 @@ We'll revisit sleep in a little bit.
   That.
 
 [siesta for health]: http://www.ncbi.nlm.nih.gov/pubmed/17296887
+
+## Notifications
+
+Most of the time you're developing not interacting with Soon. This is how it should be. When it's absolutely necessary to get your attention, Soon uses a notification.
+
+* [ ] elaborate on notifications
