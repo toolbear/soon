@@ -1,23 +1,20 @@
 <h1 title="Soon — the task timer that loves developers">🔜 — the task timer that 💙s developers</h1>
 
-Soon is a task timer with opinions on how to optimize your development time for:
+Soon is a task timer that optimizes your development time for:
 
-* completing meaningful work
+* shipping meaningful work
 * peak performance and recovery
 * achieving flow
 * mental and physical well being
 * hugs & tacos
 
-The only opinion Soon has about task or to-do lists is that you should use them.
+The only opinion Soon has about task or to-do lists is that you should use them. Out of the box Soon finds tasks from [Markdown task lists][GFM task lists], feature branches, pull requests, and GitHub issues. Mac users may be interested in the [Reminders][soon-osx-reminders] plugin. Authoring a plugin for your favorite task list manager is straightforward.
 
-Out of the box Soon finds tasks from [GFM task lists][GFM task lists], git feature branches, GitHub pull requests, and GitHub issues. Mac users may be interested in plugins for [Reminders][soon-osx-reminders] or [Things][soon-things]. Authoring a plugin for your favorite task list manager is straightforward.
-
-On the surface Soon has similarities to [a popular technique][pomodoro]. Our scope is smaller and our approach different; Soon is a tool not a methodology.
+On the surface Soon has similarities to [a popular technique][pomodoro]. Soon is a tool not a methodology.
 
 [pomodoro]: http://pomodorotechnique.com/ "The Pomodoro Technique®"
 [GFM task lists]: https://help.github.com/articles/writing-on-github/#task-lists "GitHub Flavored Markdown Task Lists"
 [soon-osx-reminders]: https://github.com/toolbear/soon-osx-reminders "Plugin for Reminders by Apple"
-[soon-things]: https://github.com/toolbear/soon-things "Plugin for Things by Cultered Code"
 
 ## Teaser
 
@@ -82,21 +79,26 @@ $ soon ls --completed⏎
 
 ### Philosophy and Motivation
 
-The stages of sleep follow a 90-120 minute cycle and research suggests this [pertinent periodicity][ultradian rhythm] persists when we're awake; our alertness, ability to focus, and energy level rise and fall in time. Totally different research showed that professional violinists and athletes have similar schedules; the top performers practiced or trained intensely for 90 minutes followed by 15-20 minutes of rest (they also slept 8 hours a night and took a short nap during the day).
+The stages of sleep follow a 90-120 minute cycle; research suggests this [pertinent periodicity][ultradian rhythm] persists when we're awake. Our alertness, ability to focus, and energy level rise and fall in time to this rhythm.
+Totally different research shows that professional violinists and athletes share similar habits. Top performers practice or train intensely for 90 minutes followed by 15-20 minutes of rest (they also get 8 hours of sleep at night and take naps).
 
 [ultradian rhythm]: http://en.wikipedia.org/wiki/Ultradian_rhythm
 
-Our experience coding in short sessions — 25 minutes long — often left us feeling that the break arrived right as things [started flowing][flow]. Increasingly breaks felt like disruptions. We stopped using the timer. In its abscense we coded long past the point of diminshing mental returns; we sat [sedentary for hours at a time][too much sitting]; we forgot to eat. Even the [lazy panda eats][lazy panda eats]! We were sad pandas.
+Our experience coding in short sessions — 25 minutes long was in vogue — often left us feeling that the break arrived right as things [started flowing][flow]. Increasingly breaks felt like disruptions. We stopped using the timer. In its abscense we coded long past the point of diminshing mental returns; we sat [sedentary for hours at a time][too much sitting]; we forgot to eat. Even the [lazy panda eats][lazy panda eats]!
+
+We were sad pandas.
 
 [flow]: http://en.wikipedia.org/wiki/Flow_(psychology)
 [too much sitting]: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3404815/ "Too Much Sitting: The Population-Health Science of Sedentary Behavior"
 [lazy panda eats]: https://www.youtube.com/watch?v=PMgN6-CUoLQ
 
-What about longer sessions? Say, 90 minutes long with 15 minute breaks? Yes, that will do nicely.
+We want to be happy pandas.
 
-We've plenty of tasks documented in `TODO.md` already. Plus a handful of issues in GitHub and the occasional contributed pull request. Shall we skip tracking those in a second place? We shall.
+What about longer sessions? Say, 90 minutes long with 15 minute breaks?
+Yes, that will do nicely.
 
-We'll revisit sleep in a little bit.
+We've plenty of tasks already documented in `TODO`. Plus a handful of issues in GitHub and the occasional contributed pull request. Shall we adopt another task list tool solely for task timing?
+We shan't.
 
 ### Doing Work
 
@@ -197,8 +199,6 @@ We'll revisit sleep in a little bit.
 
   Sometimes the session is over but you have one small thing remaining.
 
-  *If you consistently extend your sessions Soon will eventually increase the session duration*
-
   ```console
   $ soon work 'Tiggers != wonderful things'
   You've been working for 92 minutes
@@ -206,6 +206,8 @@ We'll revisit sleep in a little bit.
   ☂ Tiggers != wonderful things
   13 minutes remaining
   ```
+
+  *If you consistently extend your sessions Soon will eventually increase the default session duration*
 
   Sometimes that small task wasn't so small after all.
 
@@ -220,19 +222,19 @@ We'll revisit sleep in a little bit.
 
   Take your time. There's no late penalty. Soon assumes longer breaks will occur every few sessions even so much as skipping an entire work/rest cycle.
 
-  *If you consistently take longer breaks Soon will eventually increase the break duration*
+  *If you consistently take longer breaks Soon will eventually increase the default break duration*
 
 5. **Take a nap when sleepy**
 
   No, really.
 
-  Routine siesta taking [lowers your coronary mortality by 37%][siesta for health]; even occasional siesta has benefits. Short naps 10-20 minutes in duration reinvigorate while avoiding waking up with a case of the groggies. REM sleep is associated with mastering complex skills. You go through every stage of sleep within 90-110 minutes.
+  Routine siesta taking [lowers your coronary mortality by 37%][siesta for health]; even occasional siesta has benefits. Short naps 10-20 minutes in duration reinvigorate while avoiding waking up with a case of the groggies. REM sleep is associated with mastering complex skills. You go through every stage of sleep, including REM, within 90-110 minutes.
 
-  Unsurprisingly you can substitute lunch+siesta or one longer nap for a work/rest cycle.
+  Unsurprisingly you can substitute lunch+siesta or a long nap for a work/rest cycle.
 
 6. **Ship it! Mark it complete.**
 
-  Ship the thing. Mark it complete in your task management tool. Tell Soon you're done. In that order.
+  Ship the thing. Mark it complete in your task management tool. Tell Soon you're done.
 
   ```console
   $ soon work --complete
@@ -243,7 +245,7 @@ We'll revisit sleep in a little bit.
   …
   ```
 
-  When you know that you have plenty of time remaining you can just to begin a new task. Soon does the right things.
+  When you have plenty of time remaining you can just to begin a new task.
 
   ```console
   $ soon work Ride<TAB>
@@ -264,36 +266,34 @@ We'll revisit sleep in a little bit.
 
 Most of the time you're developing and not interacting with Soon. This is how it should be. When it's absolutely necessary to get your attention, Soon will use a notification.
 
-For notifications to work a `soon` process either needs to be running or to be run automatically frequently enough. You have a few choices and all play nicely together.
+For notifications to work Soon either needs to be running or to be run automatically and frequently. You have a few choices listed below.
 
 Attached to a terminal `soon` will print a notification message along with a `<bell>` character. On OS X, it will also send the message through *Notification Center* (disable with `--no-notification-center`).
 
-1. **Interactive Mode** — run `soon --interactive` in a new terminal. At a minimum this gets you terminal notifications. See [Interactive Mode](#interactive-mode) for all the interactive things.
+1. **Interactive Mode** — run `soon --interactive` in a new terminal. At a minimum this gets you terminal notifications. See [Interactive Mode](#interactive-mode) for the other interactive things you can do.
 
   ```console
   $ soon --interactive
-  >
 
   # … time passes
 
   <bell>
   Time for a break
   Come back in about 15 minutes
-  >
   ```
 
-2. **launchd** — Soon comes with a `launchd` agent for OS X that will issue *Notification Center* notifications.
+2. **launchd on OS X** — the Soon `launchd` agent issues *Notification Center* notifications. Install it once.
 
   ```console
   $ soon launchd >~/Library/LaunchAgents/com.npmjs.package.soon.plist
   $ launchctl -w com.npmjs.package.soon
   ```
 
-3. **Grunt (experimental)** — If you use [Grunt][gruntjs] you can try our [grunt plugin](https://www.npmjs.com/package/grunt-soon).
+3. **Grunt (experimental)** — If you use [Grunt][gruntjs] you can try the [grunt plugin](https://www.npmjs.com/package/grunt-soon). Let us know anything out of the ordinary. If it turns you purple, that is normal.
 
-4. **zsh prompt (experimental)** — [Oh-My-Zsh][oh-my-zsh] users with the `soon` plugin enabled can turn on the Soon prompt widget. Using solely this method you will only get timely notifications when you regular work has you frequently using the command-line.
+4. **zsh prompt (experimental)** — [Oh-My-Zsh][oh-my-zsh] users with the `soon` plugin enabled can turn on the Soon prompt widget. Using solely this method you will only get timely notifications with near constant command-line use. The experiment is whether this is an effective way to use Soon.
 
-5. **tmux** — tmux status bar
+5. **tmux** — tmux status bar with a doodad representing the current task type and a countdown timer. Best in conjunction with `soon --interactive` in another pane or window. Will trigger *Notification Center* messages on OS X; if you're SSH'ing into a Mac Mini in the cloud you probably want `--no-notification-center`.
 
 [gruntjs]: http://gruntjs.com
 
