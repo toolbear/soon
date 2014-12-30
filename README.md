@@ -259,11 +259,43 @@ We'll revisit sleep in a little bit.
 
 [siesta for health]: http://www.ncbi.nlm.nih.gov/pubmed/17296887
 
+
 ## Notifications
 
-Most of the time you're developing not interacting with Soon. This is how it should be. When it's absolutely necessary to get your attention, Soon uses a notification.
+Most of the time you're developing and not interacting with Soon. This is how it should be. When it's absolutely necessary to get your attention, Soon will use a notification.
 
-* [ ] elaborate on notifications
+For notifications to work a `soon` process either needs to be running or to be run automatically frequently enough. You have a few choices and all play nicely together.
+
+Attached to a terminal `soon` will print a notification message along with a `<bell>` character. On OS X, it will also send the message through *Notification Center* (disable with `--no-notification-center`).
+
+1. **Interactive Mode** — run `soon --interactive` in a new terminal. At a minimum this gets you terminal notifications. See [Interactive Mode](#interactive-mode) for all the interactive things.
+
+  ```console
+  $ soon --interactive
+  >
+
+  # … time passes
+
+  <bell>
+  Time for a break
+  Come back in about 15 minutes
+  >
+  ```
+
+2. **launchd** — Soon comes with a `launchd` agent for OS X that will issue *Notification Center* notifications.
+
+  ```console
+  $ soon launchd >~/Library/LaunchAgents/com.npmjs.package.soon.plist
+  $ launchctl -w com.npmjs.package.soon
+  ```
+
+3. **Grunt (experimental)** — If you use [Grunt][gruntjs] you can try our [grunt plugin](https://www.npmjs.com/package/grunt-soon).
+
+4. **zsh prompt (experimental)** — [Oh-My-Zsh][oh-my-zsh] users with the `soon` plugin enabled can turn on the Soon prompt widget. Using solely this method you will only get timely notifications when you regular work has you frequently using the command-line.
+
+5. **tmux** — tmux status bar
+
+[gruntjs]: http://gruntjs.com
 
 ## Interactive Mode
 
