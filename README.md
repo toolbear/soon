@@ -264,3 +264,24 @@ We'll revisit sleep in a little bit.
 Most of the time you're developing not interacting with Soon. This is how it should be. When it's absolutely necessary to get your attention, Soon uses a notification.
 
 * [ ] elaborate on notifications
+
+## Interactive Mode
+
+* status bar showing current task and work/break timer
+* automatic notifications
+* `soon` command prompt with tab completion
+
+```console
+$ soon --interactive
+>  ls
+☂ Tiggers != wonderful things
+★ Ride balloon to beehive
+
+> ls --pull-request
+★ Ride balloon to beehive
+
+> work give<TAB>
+> work give-eeyore-a-hug
+⎇ give-eeyore-a-hug
+47 minutes remaining
+```
