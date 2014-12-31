@@ -212,7 +212,7 @@ Available tasks
   ★ Ride balloon to beehive
 
 $ soon work --continue
-You rested for 32 minutes
+You rested for 17 minutes
 ⎇ give-eeyore-a-hug
 90 minutes remaining
 ```
