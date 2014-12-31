@@ -1,6 +1,6 @@
 <h1 title="soon">🔜</h1>
 
-Soon is the task timer that 💙s developers and optimizes your time for
+The task timer that 💙s developers and optimizes your time for:
 
 * shipping meaningful work
 * peak performance and recovery
@@ -8,9 +8,9 @@ Soon is the task timer that 💙s developers and optimizes your time for
 * mental and physical well being
 * hugs & tacos
 
-The only opinion soon has about task or to-do lists is that you should use them. Out of the box soon finds tasks from [Markdown task lists][GFM task lists], feature branches, pull requests, and GitHub issues. Mac users may be interested in the [Reminders][soon-osx-reminders] plugin. Authoring a plugin for your favorite task list manager is straightforward.
+The only opinion soon has about task or to-do lists is that you should use them. Out of the box it finds tasks from [Markdown task lists][GFM task lists], feature branches, pull requests, and GitHub issues. Mac users may be interested in the [Reminders][soon-osx-reminders] plugin. Authoring a plugin for your favorite task list manager is straightforward.
 
-On the surface soon has similarities to [a popular technique][pomodoro]. Soon is a tool not a methodology.
+On the surface it has similarities to [a popular technique][pomodoro]. Soon is a tool not a methodology.
 
 [pomodoro]: http://pomodorotechnique.com/ "The Pomodoro Technique®"
 [GFM task lists]: https://help.github.com/articles/writing-on-github/#task-lists "GitHub Flavored Markdown Task Lists"
@@ -53,7 +53,7 @@ $ soon ls --completed⏎
 12 minutes until your next break
 ```
 
-Jump to [Getting Started](#getting-started) or read on a little on soon's philosophy and motivation.
+Jump to [Getting Started](#getting-started) or read a little of our philosophy and motivation.
 
 ## Using Soon for Great Success
 
@@ -93,7 +93,7 @@ Those top performers. They slept 8 hours a night and took a nap during the day. 
 
 3. Install [hub][hub] and alias `git` to `hub`
 
-4. Run `. <(soon completion)` to add soon tab completion for the current shell.
+4. Run `. <(soon completion)` to add tab completion to the current shell. To make it permanent:
 
   [Oh-My-Zsh][oh-my-zsh] users enable the `soon` plugin.
 
@@ -178,7 +178,7 @@ Tab completion is context aware and super smart so you can get on with actual wo
 
 ### Develop for 90 minutes. Relax for 15. Repeat.
 
-Soon starts you off on a 90/15 schedule. This might change over time as soon learns more about you.
+You start with a 90/15 schedule. This may change over time as soon learns more about you.
 
 When you begin work on a task soon starts the timer.
 
@@ -318,7 +318,7 @@ Attached to a terminal `soon` will print a notification message along with a `<b
 
 * status bar showing current task and work/break timer
 * automatic notifications
-* `soon` command prompt with tab completion
+* command prompt with tab completion
 
 ```console
 $ soon --interactive
