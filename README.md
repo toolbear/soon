@@ -265,7 +265,7 @@ $ soon work <TAB>
 …
 ```
 
-When you have plenty of time remaining you can just to begin a new task.
+When you know you have plenty of remaining time, skip `work --complete` and just begin a new task.
 
 ```console
 $ soon work Ride<TAB>
