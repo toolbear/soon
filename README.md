@@ -53,7 +53,7 @@ $ soon ls --completed⏎
 12 minutes until your next break
 ```
 
-Jump to [Getting Started](#getting-started) or read a little of our philosophy and motivation.
+Jump to [Getting Started](#getting-started) or read a little on our philosophy and motivation.
 
 ## Using Soon for Great Success
 
@@ -63,9 +63,9 @@ The stages of sleep follow a 90-120 minute cycle and research indicates this [pe
 
 [ultradian rhythm]: http://en.wikipedia.org/wiki/Ultradian_rhythm
 
-Coincidence? Maybe. But if you are already looking to constrain your development sessions to an arbitrary length, why not a duration with a track record of success and which might not be that arbitrary?
+Coincidence? Maybe. Science? Possibly. If you are already looking to constrain your development sessions to an arbitrary length, why not a duration with a track record of success and which might not be that arbitrary?
 
-Our experience coding in short sessions — typically 25 minutes — left us feeling that the break arrived too soon, right as things [started flowing][flow]. Breaks became bad disruptions. We abandoned the timer. In its absence we coded long past the point of diminishing mental returns; we sat [sedentary for hours][too much sitting]; we forgot to eat. Even the [lazy panda eats][lazy panda eats]!
+Our experience coding in short sessions — typically 25 minutes — left us feeling like the break arrived abruptly, right as things [started flowing][flow]. Breaks became interruptions. We abandoned the timer. In its absence we coded long past the point of diminishing mental returns; we sat [sedentary for hours][too much sitting]; we forgot to eat. Even the [lazy panda eats][lazy panda eats]!
 
 [flow]: http://en.wikipedia.org/wiki/Flow_(psychology)
 [too much sitting]: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3404815/ "Too Much Sitting: The Population-Health Science of Sedentary Behavior"
@@ -73,13 +73,15 @@ Our experience coding in short sessions — typically 25 minutes — left us fee
 
 We were sad pandas.
 
-We wanted to be happy pandas.
+We want to be happy pandas.
 
 “What about longer sessions?” we thought. We resolved to try longer sessions.
 
-“What's with these half-implemented task list managers bolted on to our timer?” we also thought. “We've plenty of tasks already documented in `TODO`. Plus a handful of issues in GitHub and the occasional contributed pull request. Shall we adopt another task list tool solely for task timing?” We shan't do that.
+“While we're at it,” we also thought, “what's with these half-implemented task list managers bolted on to our timer? We've plenty of tasks already documented in `TODO`. Plus a handful of issues in GitHub and the occasional contributed pull request. Shall we adopt another task list tool solely for task timing?”
 
-Those top performers. They slept 8 hours a night and took a nap during the day. Happy pandas also nap.
+We shan't do that.
+
+Pandas nap. So do top performers (and they sleep 8 hours a night).
 
 ## Getting Started
 
