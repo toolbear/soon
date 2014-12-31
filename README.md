@@ -1,6 +1,6 @@
-<h1 title="Soon — the task timer that loves developers">🔜 — the task timer that 💙s developers</h1>
+<h1 title="soon">🔜</h1>
 
-Soon is a task timer that optimizes your development time for:
+Soon is the task timer that 💙s developers and optimizes your time for
 
 * shipping meaningful work
 * peak performance and recovery
@@ -8,9 +8,9 @@ Soon is a task timer that optimizes your development time for:
 * mental and physical well being
 * hugs & tacos
 
-The only opinion Soon has about task or to-do lists is that you should use them. Out of the box Soon finds tasks from [Markdown task lists][GFM task lists], feature branches, pull requests, and GitHub issues. Mac users may be interested in the [Reminders][soon-osx-reminders] plugin. Authoring a plugin for your favorite task list manager is straightforward.
+The only opinion soon has about task or to-do lists is that you should use them. Out of the box soon finds tasks from [Markdown task lists][GFM task lists], feature branches, pull requests, and GitHub issues. Mac users may be interested in the [Reminders][soon-osx-reminders] plugin. Authoring a plugin for your favorite task list manager is straightforward.
 
-On the surface Soon has similarities to [a popular technique][pomodoro]. Soon is a tool not a methodology.
+On the surface soon has similarities to [a popular technique][pomodoro]. Soon is a tool not a methodology.
 
 [pomodoro]: http://pomodorotechnique.com/ "The Pomodoro Technique®"
 [GFM task lists]: https://help.github.com/articles/writing-on-github/#task-lists "GitHub Flavored Markdown Task Lists"
@@ -114,7 +114,7 @@ We shan't.
 
 2. **Pick an available task. Begin work.**
 
-  Available tasks come in many forms: an [incomplete task][GFM task lists] in `README` or `TODO`; the current branch; local feature branches that are ahead of `master`; an open pull request or open issue. Work how you always have, Soon will find them.
+  Available tasks come in many forms: an [incomplete task][GFM task lists] in `README` or `TODO`; the current branch; local feature branches that are ahead of `master`; an open pull request or open issue. Work how you always have, soon will find them.
 
   Use `soon ls` to list available tasks for the current project, optionally filtering by type (e.g. `--pull-request` or `--todo`).
 
@@ -166,9 +166,9 @@ We shan't.
 
 3. **Develop for 90 minutes. Relax for 15. Repeat.**
 
-  Soon starts you off on a 90/15 schedule. This might change over time as Soon learns more about you.
+  Soon starts you off on a 90/15 schedule. This might change over time as soon learns more about you.
 
-  When you begin work on a task Soon starts the timer.
+  When you begin work on a task soon starts the timer.
 
   ```console
   $ soon work 'Ride balloon to beehive'
@@ -178,7 +178,7 @@ We shan't.
 
   Tasks are as big or as small as you make them. A single task could span several sessions or you could complete several tasks in a single session.
 
-  When you start a task partway through a session Soon reports the time remaining.
+  When you start a task partway through a session soon reports the time remaining.
 
   ```console
   $ soon work give-eeyore-a-hug
@@ -186,7 +186,7 @@ We shan't.
   47 minutes remaining
   ```
 
-  When you resume after a break Soon suggests the task you last worked on (unless you completed it). Or you can resume it automatically.
+  When you resume after a break soon suggests the task you last worked on (unless you completed it). Or you can resume it automatically.
 
   ```console
   $ soon work <TAB>
@@ -213,7 +213,7 @@ We shan't.
   13 minutes remaining
   ```
 
-  *If you consistently extend your sessions Soon will eventually increase the default session duration*
+  *If you consistently extend your sessions soon will eventually increase the default session duration*
 
   Sometimes that small task wasn't so small after all.
 
@@ -228,7 +228,7 @@ We shan't.
 
   Take your time. There's no late penalty. Soon assumes longer breaks will occur every few sessions even so much as skipping an entire work/rest cycle.
 
-  *If you consistently take longer breaks Soon will eventually increase the default break duration*
+  *If you consistently take longer breaks soon will eventually increase the default break duration*
 
 5. **Take a nap when sleepy**
 
@@ -240,7 +240,7 @@ We shan't.
 
 6. **Ship it! Mark it complete.**
 
-  Ship the thing. Mark it complete in your task management tool. Tell Soon you're done.
+  Ship the thing. Mark it complete in your task management tool. Tell soon you're done.
 
   ```console
   $ soon work --complete
@@ -270,9 +270,9 @@ We shan't.
 
 ## Notifications
 
-Most of the time you're developing and not interacting with Soon. This is how it should be. When it's absolutely necessary to get your attention, Soon will use a notification.
+Most of the time you're developing and not interacting with soon. This is how it should be. When it's absolutely necessary to get your attention, soon will use a notification.
 
-For notifications to work Soon either needs to be running or to be run automatically and frequently. You have a few choices listed below.
+For notifications to work soon either needs to be running or to be run automatically and frequently. You have a few choices listed below.
 
 Attached to a terminal `soon` will print a notification message along with a `<bell>` character. On OS X, it will also send the message through *Notification Center* (disable with `--no-notification-center`).
 
@@ -288,7 +288,7 @@ Attached to a terminal `soon` will print a notification message along with a `<b
   Come back in about 15 minutes
   ```
 
-2. **launchd on OS X** — the Soon `launchd` agent issues *Notification Center* notifications. Install it once.
+2. **launchd on OS X** — the soon `launchd` agent issues *Notification Center* notifications. Install it once.
 
   ```console
   $ soon launchd >~/Library/LaunchAgents/com.npmjs.package.soon.plist
@@ -297,7 +297,7 @@ Attached to a terminal `soon` will print a notification message along with a `<b
 
 3. **Grunt (experimental)** — If you use [Grunt][gruntjs] you can try the [grunt plugin](https://www.npmjs.com/package/grunt-soon). Let us know anything out of the ordinary. If it turns you purple, that is normal.
 
-4. **zsh prompt (experimental)** — [Oh-My-Zsh][oh-my-zsh] users with the `soon` plugin enabled can turn on the Soon prompt widget. Using solely this method you will only get timely notifications with near constant command-line use. The experiment is whether this is an effective way to use Soon.
+4. **zsh prompt (experimental)** — [Oh-My-Zsh][oh-my-zsh] users with the `soon` plugin enabled can turn on the soon prompt widget. Using solely this method you will only get timely notifications with near constant command-line use. The experiment is whether this is an effective way to use soon.
 
 5. **tmux** — tmux status bar with a doodad representing the current task type and a countdown timer. Best in conjunction with `soon --interactive` in another pane or window. Will trigger *Notification Center* messages on OS X; if you're SSH'ing into a Mac Mini in the cloud you probably want `--no-notification-center`.
 
