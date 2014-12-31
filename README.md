@@ -59,18 +59,24 @@ $ soon ls --completed⏎
 
 1. Install [Node.js][node]
 2. Install `soon` globally
+
   ```console
   $ sudo npm install -g soon
   ```
+
 3. Run `. <(soon completion)` to enable tab completion for your current shell.
   [Oh-My-Zsh][oh-my-zsh] users should enable the `soon` plugin.
+
   ```zsh
   plugins=(git osx terminalapp soon)
   ```
+
   Everyone else should add the following to `~/.bashrc` or `~/.zshrc`.
+
   ```console
   . <(soon completion)
   ```
+
 4. Install [hub][hub] and alias `git` to `hub`
 
 [hub]: https://hub.github.com "the command-line wrapper for git"
