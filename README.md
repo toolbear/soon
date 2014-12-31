@@ -180,8 +180,6 @@ Tab completion is context aware and super smart so you can get on with actual wo
 
 ### Develop for 90 minutes. Relax for 15. Repeat.
 
-You start with a 90/15 schedule. This may change over time as soon learns more about you.
-
 When you begin work on a task soon starts the timer.
 
 ```console
