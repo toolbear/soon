@@ -5,7 +5,7 @@
   "homepage":     "https://github.com/toolbear/soon",
   "author":       "Tim Taylor <tim@tool-man.org> (https://github.com/toolbear)",
   "bugs":         "https://github.com/toolbear/soon/issues",
-  "bin":          "./bin/soon",
+  "bin":          "bin/soon",
   "preferGlobal": true,
   "private":      true,
   "repository": {
@@ -15,6 +15,9 @@
   "dependencies": {},
   "devDependencies": {
     "coffee-script": "^1.8.0"
+  },
+  "scripts": {
+    "prepublish": "coffee -co lib lib"
   },
   "licenses": [
     {
