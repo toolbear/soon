@@ -334,6 +334,19 @@ $ soon --interactive
 47 minutes remaining
 ```
 
+## Doodads
+
+The default doodads are:
+
+```
+✓ task list
+⎇ feature branch
+★ pull request
+☂ issue
+```
+
+Disable them with `--no-doodads`. Reward your inner child with `--doodads=emoji`.
+
 ## TODO
 
 * [x] write the README first
