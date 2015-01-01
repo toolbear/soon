@@ -281,13 +281,11 @@ That.
 
 ## Notifications
 
-Most of the time you're developing and not interacting with soon. This is how it should be. When it's absolutely necessary to get your attention, soon will use a notification.
+Most of the time you're not interacting with soon. When it's absolutely necessary to get your attention, soon will use a notification. Attached to a terminal, `soon` will print a notification message along with a `<bell>` character. On OS X, it will also use *Notification Center* unless  you specify `--no-notification-center`.
 
-For notifications to work soon either needs to be running or to be run automatically and frequently. You have a few choices listed below.
+For notifications to be effective soon must either be actively running or it must be run at least every couple of minutes. Some options:
 
-Attached to a terminal `soon` will print a notification message along with a `<bell>` character. On OS X, it will also send the message through *Notification Center* (disable with `--no-notification-center`).
-
-1. **Interactive Mode** — run `soon --interactive` in a new terminal. At a minimum this gets you terminal notifications. See [Interactive Mode](#interactive-mode) for the other interactive things you can do.
+1. **Interactive Mode** — run `soon --interactive` in a new terminal.
 
   ```console
   $ soon --interactive
@@ -299,18 +297,19 @@ Attached to a terminal `soon` will print a notification message along with a `<b
   Come back in about 15 minutes
   ```
 
+  See [Interactive Mode](#interactive-mode) for what else you can do.
+
 2. **launchd on OS X** — the soon `launchd` agent issues *Notification Center* notifications. Install it once.
 
   ```console
   $ soon launchd >~/Library/LaunchAgents/com.npmjs.package.soon.plist
   $ launchctl -w com.npmjs.package.soon
   ```
+5. **tmux** — tmux status bar with a doodad representing the current task type and the timer. Green when you're working, red when on break, no doodad and default foreground when you haven't told soon what you're working on.
 
-3. **Grunt (experimental)** — If you use [Grunt][gruntjs] you can try the [grunt plugin](https://www.npmjs.com/package/grunt-soon). Let us know anything out of the ordinary. If it turns you purple, that is normal.
+3. **Grunt (experimental)** — If you use [Grunt][gruntjs] you can try the [grunt plugin](https://www.npmjs.com/package/grunt-soon).
 
-4. **zsh prompt (experimental)** — [Oh-My-Zsh][oh-my-zsh] users with the `soon` plugin enabled can turn on the soon prompt widget. Using solely this method you will only get timely notifications with near constant command-line use. The experiment is whether this is an effective way to use soon.
-
-5. **tmux** — tmux status bar with a doodad representing the current task type and a countdown timer. Best in conjunction with `soon --interactive` in another pane or window. Will trigger *Notification Center* messages on OS X; if you're SSH'ing into a Mac Mini in the cloud you probably want `--no-notification-center`.
+4. **zsh prompt (experimental)** — [Oh-My-Zsh][oh-my-zsh] users using the `soon` plugin can add a timer to their prompt. You will only get timely notifications with frequent command-line use.
 
 [gruntjs]: http://gruntjs.com
 
