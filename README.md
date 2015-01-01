@@ -105,7 +105,7 @@ Pandas nap. So do top performers (and they sleep 8 hours a night).
 
   Everyone else add the following to `~/.bashrc` or `~/.zshrc`.
 
-  ```console
+  ```shell
   . <(soon completion)
   ```
 
