@@ -90,7 +90,7 @@ Pandas nap. So do top performers (and they sleep 8 hours a night).
 2. Install soon globally
 
   ```console
-  $ sudo npm install -g soon
+  $ npm install -g soon
   ```
 
 3. Install [hub][hub] and alias `git` to `hub`
