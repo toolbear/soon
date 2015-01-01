@@ -242,15 +242,13 @@ Take your time. There's no late penalty. Soon assumes longer breaks will occur e
 
 *If you consistently take longer breaks soon will eventually increase the default break duration*
 
-### Take a nap when sleepy.
+### Nap when sleepy.
 
-No, really.
+Really.
 
-Routine siesta taking [lowers your coronary mortality by 37%][siesta for health]; even occasional siesta has benefits. Short naps 10-20 minutes in duration reinvigorate while avoiding waking up with a case of the groggies. REM sleep is associated with mastering complex skills. You go through every stage of sleep, including REM, within 90-110 minutes.
+Routine siestas [lower your coronary mortality by 37%][siesta for health]; even occasional siestas are beneficial. If you limit a nap to 10-20 minutes you won't wake with a case of the groggies. REM sleep is associated with mastering complex skills; a nap 90-110 minutes long will include a complete REM stage.
 
 [siesta for health]: http://www.ncbi.nlm.nih.gov/pubmed/17296887
-
-Unsurprisingly you can substitute lunch+siesta or a long nap for a work/rest cycle.
 
 ### Ship it! Mark it complete.
 
