@@ -1,6 +1,6 @@
 <h1 title="soon">🔜</h1>
 
-The task timer that 💙s developers and optimizes your time for:
+The project oriented task timer that 💙s developers and optimizes your time for:
 
 * shipping meaningful work
 * peak performance and recovery
@@ -8,7 +8,7 @@ The task timer that 💙s developers and optimizes your time for:
 * mental and physical well being
 * hugs & tacos
 
-The only opinion soon has about task or to-do lists is that you should use them. Out of the box it finds tasks from [Markdown task lists][GFM task lists], feature branches, pull requests, and GitHub issues. Mac users may be interested in the [Reminders][soon-osx-reminders] plugin. Authoring a plugin for your favorite task list manager is straightforward.
+The only opinion soon has about task or to-do lists is that you should use them. Out of the box it finds tasks from [Markdown task lists][GFM task lists], feature branches, and GitHub. Mac users may be interested in the [Reminders][soon-osx-reminders] plugin. Authoring a plugin for your favorite task list manager is straightforward.
 
 On the surface it has similarities to [a popular technique][pomodoro]. Soon is a tool not a methodology.
 
