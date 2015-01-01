@@ -16,6 +16,9 @@
   "devDependencies": {
     "coffee-script": "^1.8.0"
   },
+  "scripts": {
+    "prepublish": "coffee -co lib lib"
+  },
   "licenses": [
     {
       "type": "MIT",
