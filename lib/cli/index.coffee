@@ -1,5 +1,5 @@
-module.exports = ->
-  command = switch process.argv[2]
+module.exports = (args) ->
+  command = switch args[0]
     when '--version' then version
     when 'completion' then require './commands/completion'
     when 'ls' then require './commands/ls'
