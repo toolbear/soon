@@ -9,6 +9,7 @@ inject = (deps) ->
   cli = (args) ->
     fn = switch command = args[0]
       when '--version' then version
+      when '--help' then help
       else commands[command] ? unknownCommand(command)
     fn()
 
@@ -18,6 +19,16 @@ inject = (deps) ->
 
   version = ->
     console.log "soon #{packageVersion}"
+
+  help = ->
+    console.log '''
+      usage: soon [--version] [--help] <command> [<args>]
+
+      Commands:
+        ls            List tasks polled from various sources
+        interactive   REPL and tty notifications
+        work          Begin, resume, and complete tasks with a timer
+      '''
 
   cli.inject = inject
   cli

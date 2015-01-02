@@ -22,6 +22,13 @@ describe '$ soon', ->
 
       Then  -> expect(@out).to.match /^soon zulu.foxtrot.tango\s$/
 
+    describe '--help', ->
+      Given -> @args = ['--help']
+
+      Then  -> expect(@out).to.match /^usage: soon /
+      And   -> expect(@err).to.be.empty
+      And   -> expect(@process.exit).not.to.have.been.called
+
   describe 'commands', ->
     Given -> @deps.commands = {}
 
