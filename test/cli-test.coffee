@@ -31,7 +31,7 @@ describe '$ soon', ->
       And   -> expect(@process.exit).to.have.been.calledWith 1
 
     describe 'a known command', ->
-      Given -> @args = ['ls']
-      Given -> @deps.commands.ls = @ls = spy()
+      Given -> @args = ['blort']
+      Given -> @deps.commands.blort = @blort = spy()
 
-      Then  -> expect(@ls).to.have.been.called
+      Then  -> expect(@blort).to.have.been.called
