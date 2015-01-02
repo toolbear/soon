@@ -17,8 +17,10 @@ describe '$ soon', ->
   describe 'options', ->
 
     describe '--version', ->
+      Given -> @deps.packageVersion = 'zulu.foxtrot.tango'
       Given -> @args = ['--version']
-      Then  -> expect(@out).to.match /^soon \d+.\d+.\d+/
+
+      Then  -> expect(@out).to.match /^soon zulu.foxtrot.tango\s$/
 
   describe 'commands', ->
     Given -> @deps.commands = {}
