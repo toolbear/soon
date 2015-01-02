@@ -23,10 +23,10 @@ inject = (deps) ->
   cli
 
 module.exports = inject
-  packageVersion: require('./../../package.json').version
+  packageVersion: require('./../package.json').version
   process: process
   console: console
   commands:
-    completion: require './commands/completion'
-    ls:         require './commands/ls'
-    work:       require './commands/work'
+    completion: require './cli/commands/completion'
+    ls:         require './cli/commands/ls'
+    work:       require './cli/commands/work'
