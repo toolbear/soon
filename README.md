@@ -1,5 +1,7 @@
 <h1 title="soon">🔜</h1>
 
+[![Build Status](https://travis-ci.org/toolbear/soon.png?branch=master)](https://travis-ci.org/toolbear/soon)
+
 The project oriented task timer that 💙s developers and optimizes your time for:
 
 * shipping meaningful work

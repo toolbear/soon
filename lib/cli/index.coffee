@@ -1,14 +1,32 @@
-module.exports = (args) ->
-  command = switch args[0]
-    when '--version' then version
-    when 'completion' then require './commands/completion'
-    when 'ls' then require './commands/ls'
-    when 'work' then require './commands/work'
-    else ->
-      console.error 'oops'
-      process.exit 1
-  command()
+inject = (deps) ->
+  {
+    process
+    console
+    commands
+    packageVersion
+  } = deps
 
-version = ->
-  v = (require './../../package.json').version
-  console.log "soon #{v}"
+  cli = (args) ->
+    fn = switch command = args[0]
+      when '--version' then version
+      else commands[command] ? unknownCommand(command)
+    fn()
+
+  unknownCommand = (command) -> ->
+    console.error "soon: `#{command}` is not a soon command. See `soon --help`."
+    process.exit 1
+
+  version = ->
+    console.log "soon #{packageVersion}"
+
+  cli.inject = inject
+  cli
+
+module.exports = inject
+  packageVersion: require('./../../package.json').version
+  process: process
+  console: console
+  commands:
+    completion: require './commands/completion'
+    ls:         require './commands/ls'
+    work:       require './commands/work'
