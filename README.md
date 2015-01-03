@@ -121,7 +121,7 @@ Pandas nap. So do top performers (and they sleep 8 hours a night).
 
 ### Use git.
 
-Soon relies on `git` to find the root of your current project, determine the current branch, and detect topic branches. It relies on `git` wrapped by [hub][hub] to find pull requests and issues.
+Soon relies on `git` to find tasks related to your project. It relies on `git` wrapped by [hub][hub] to find pull requests and issues.
 
 ### Pick an available task. Begin work.
 
