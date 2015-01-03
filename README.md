@@ -12,7 +12,7 @@ The project oriented task timer that 💙s developers and optimizes your time fo
 * mental and physical well being
 * hugs & tacos
 
-The only opinion soon has about task or to-do lists is that you should use them. Out of the box it finds tasks from [Markdown task lists][GFM task lists], feature branches, and GitHub. Mac users may be interested in the [Reminders][soon-osx-reminders] plugin. Authoring a plugin for your favorite task list manager is straightforward.
+The only opinion soon has about task or to-do lists is that you should use them. Out of the box it finds tasks from [Markdown task lists][GFM task lists], topic branches, and GitHub. Mac users may be interested in the [Reminders][soon-osx-reminders] plugin. Authoring a plugin for your favorite task list manager is straightforward.
 
 On the surface it has similarities to [a popular technique][pomodoro]. Soon is a tool not a methodology.
 
@@ -121,7 +121,7 @@ Pandas nap. So do top performers (and they sleep 8 hours a night).
 
 ### Use git.
 
-Soon relies on `git` to find the root of your current project, determine the current branch, and detect feature branches. It relies on `git` wrapped by [hub][hub] to find pull requests and issues.
+Soon relies on `git` to find the root of your current project, determine the current branch, and detect topic branches. It relies on `git` wrapped by [hub][hub] to find pull requests and issues.
 
 ### Pick an available task. Begin work.
 
@@ -129,7 +129,7 @@ Available tasks come in many forms.
 
 * an [incomplete task][GFM task lists] in `README` or `TODO`
 * the current branch
-* local feature branches that are ahead of `master`
+* local topic branches that are ahead of `master`
 * an open pull request or open issue
 
 Work how you always have, soon will find them.
@@ -342,7 +342,7 @@ The default doodads are:
 
 ```
 ✓ task list
-⎇ feature branch
+⎇ topic branch
 ★ pull request
 ☂ issue
 ```
