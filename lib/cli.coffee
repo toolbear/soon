@@ -7,23 +7,32 @@ inject = (deps) ->
   } = deps
 
   cli = (args) ->
-    fn = switch c = args[0] ? null
-      when null then usage
+    fn = switch arg = args[0] ? null
+      when null        then helpAndFail
       when '--version' then version
-      when '--help' then help
-      else commands[c] ? unknownCommand(c)
+      when '--help'    then help
+      else
+        if arg.match /^--/
+          unknownOption(arg)
+        else
+          commands[arg] ? unknownCommand(arg)
     fn()
 
-  unknownCommand = (command) -> ->
-    console.error "soon: `#{command}` is not a soon command. See `soon --help`."
+  unknownOption = (o) -> ->
+    console.error "Unknown option: #{o}"
+    usage(console.error)
+    process.exit 1
+
+  unknownCommand = (c) -> ->
+    console.error "soon: `#{c}` is not a soon command. See `soon --help`."
     process.exit 1
 
   version = ->
     console.log "soon #{packageVersion}"
 
   help = (log=console.log) ->
+    usage(log)
     log '''
-      usage: soon [--version] [--help] <command> [<args>]
 
       Commands:
         ls            List tasks polled from various sources
@@ -32,9 +41,14 @@ inject = (deps) ->
         completion    Tab completion
       '''
 
-  usage = ->
-    help console.error
+  helpAndFail = ->
+    help(console.error)
     process.exit 1
+
+  usage = (log=console.log) ->
+    log """
+      usage: soon [--version] [--help] <command> [<args>]
+      """
 
   cli.inject = inject
   cli

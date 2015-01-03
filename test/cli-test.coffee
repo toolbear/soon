@@ -16,13 +16,21 @@ describe '$ soon', ->
   When  -> @cli = require('./../lib/cli').inject @deps
   When  -> @cli(@args)
 
-  describe 'no arguments', ->
-    Then  -> expect(@err).to.match /^usage: soon /
+  describe 'with no arguments displays long usage', ->
+    Then  -> expect(@err).to.match /^usage: soon /m
     And   -> expect(@err).to.match /^Commands:/m
     And   -> expect(@out).to.be.empty
     And   -> expect(@process.exit).to.have.been.calledWith 1
 
   describe 'options', ->
+
+    describe 'with an unknown option displays short usage', ->
+      Given -> @args = ['--razzledaz']
+
+      Then  -> expect(@err).to.match /Unknown option: --razzledaz/m
+      And   -> expect(@err).to.match /^usage: soon/m
+      And   -> expect(@err).not.to.match /^Commands:/m
+      And   -> expect(@process.exit).to.have.been.calledWith 1
 
     describe '--version', ->
       Given -> @deps.packageVersion = 'zulu.foxtrot.tango'
