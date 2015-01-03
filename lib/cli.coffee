@@ -28,6 +28,8 @@ inject = (deps) ->
       Commands:
         ls            List tasks polled from various sources
         work          Begin, resume, and complete tasks with a timer
+
+        completion    Tab completion
       '''
 
   usage = ->
