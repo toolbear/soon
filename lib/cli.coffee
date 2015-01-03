@@ -27,7 +27,6 @@ inject = (deps) ->
 
       Commands:
         ls            List tasks polled from various sources
-        interactive   REPL and tty notifications
         work          Begin, resume, and complete tasks with a timer
       '''
 
