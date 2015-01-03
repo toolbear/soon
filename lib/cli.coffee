@@ -53,11 +53,4 @@ inject = (deps) ->
   cli.inject = inject
   cli
 
-module.exports = inject
-  packageVersion: require('./../package.json').version
-  process: process
-  console: console
-  commands:
-    completion: require './cli/commands/completion'
-    ls:         require './cli/commands/ls'
-    work:       require './cli/commands/work'
+module.exports = inject(require './config')
