@@ -7,10 +7,11 @@ inject = (deps) ->
   } = deps
 
   cli = (args) ->
-    fn = switch command = args[0]
+    fn = switch c = args[0] ? null
+      when null then usage
       when '--version' then version
       when '--help' then help
-      else commands[command] ? unknownCommand(command)
+      else commands[c] ? unknownCommand(c)
     fn()
 
   unknownCommand = (command) -> ->
@@ -20,8 +21,8 @@ inject = (deps) ->
   version = ->
     console.log "soon #{packageVersion}"
 
-  help = ->
-    console.log '''
+  help = (log=console.log) ->
+    log '''
       usage: soon [--version] [--help] <command> [<args>]
 
       Commands:
@@ -29,6 +30,10 @@ inject = (deps) ->
         interactive   REPL and tty notifications
         work          Begin, resume, and complete tasks with a timer
       '''
+
+  usage = ->
+    help console.error
+    process.exit 1
 
   cli.inject = inject
   cli

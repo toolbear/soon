@@ -10,9 +10,17 @@ describe '$ soon', ->
   Given -> @deps =
     process: @process
     console: @console
+    commands: {}
+  Given -> @args = []
 
   When  -> @cli = require('./../lib/cli').inject @deps
   When  -> @cli(@args)
+
+  describe 'no arguments', ->
+    Then  -> expect(@err).to.match /^usage: soon /
+    And   -> expect(@err).to.match /^Commands:/m
+    And   -> expect(@out).to.be.empty
+    And   -> expect(@process.exit).to.have.been.calledWith 1
 
   describe 'options', ->
 
@@ -30,8 +38,6 @@ describe '$ soon', ->
       And   -> expect(@process.exit).not.to.have.been.called
 
   describe 'commands', ->
-    Given -> @deps.commands = {}
-
     describe 'an unknown command', ->
       Given -> @args = ['snarf']
 
