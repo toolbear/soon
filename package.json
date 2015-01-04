@@ -19,13 +19,11 @@
     "mocha-given": "^0.1.3",
     "chai": "^1.10.0",
     "sinon": "^1.12.2",
-    "sinon-chai": "^2.6.0",
-    "testem": "^0.6.24"
+    "sinon-chai": "^2.6.0"
   },
   "scripts": {
     "prepublish": "coffee -co lib lib",
-    "test":       "./node_modules/.bin/testem -f test/config.json",
-    "test-ci":    "./node_modules/.bin/mocha --recursive -u mocha-given --compilers coffee:coffee-script/register test/**/*-test.coffee"
+    "test":       "./node_modules/.bin/mocha --reporter spec"
   },
   "licenses": [
     {

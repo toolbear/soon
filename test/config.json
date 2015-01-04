@@ -8,7 +8,7 @@
   "launch_in_ci":  ["Node"],
   "launchers": {
     "Node": {
-      "command": "./node_modules/.bin/mocha --recursive -u mocha-given --colors --compilers coffee:coffee-script/register test/**/*-test.coffee"
+      "command": "./node_modules/.bin/mocha --reporter spec"
     }
   }
 }

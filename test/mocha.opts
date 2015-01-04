@@ -1,0 +1,5 @@
+--recursive
+--ui mocha-given
+--reporter min
+--colors
+--compilers coffee:coffee-script/register
