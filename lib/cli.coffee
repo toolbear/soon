@@ -1,3 +1,5 @@
+config = require './config'
+
 inject = (deps) ->
   {
     process
@@ -15,22 +17,22 @@ inject = (deps) ->
         if arg.match /^--/
           unknownOption(arg)
         else
-          commands[arg] ? unknownCommand(arg)
+          commands()[arg] ? unknownCommand(arg)
     fn()
 
   unknownOption = (o) -> ->
-    console.error "Unknown option: #{o}"
-    usage(console.error)
-    process.exit 1
+    console().error "Unknown option: #{o}"
+    usage(console().error)
+    process().exit 1
 
   unknownCommand = (c) -> ->
-    console.error "soon: `#{c}` is not a soon command. See `soon --help`."
-    process.exit 1
+    console().error "soon: `#{c}` is not a soon command. See `soon --help`."
+    process().exit 1
 
   version = ->
-    console.log "soon #{packageVersion}"
+    console().log "soon #{packageVersion()}"
 
-  help = (log=console.log) ->
+  help = (log=console().log) ->
     usage(log)
     log '''
 
@@ -42,15 +44,15 @@ inject = (deps) ->
       '''
 
   helpAndFail = ->
-    help(console.error)
-    process.exit 1
+    help(console().error)
+    process().exit 1
 
-  usage = (log=console.log) ->
+  usage = (log=console().log) ->
     log """
       usage: soon [--version] [--help] <command> [<args>]
       """
 
-  cli.inject = inject
+  cli.inject ?= inject
   cli
 
-module.exports = inject(require './config')
+module.exports = inject config

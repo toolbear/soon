@@ -8,9 +8,8 @@ describe '$ soon', ->
     log:   (m) => @out += "#{m}\n"
     error: (m) => @err += "#{m}\n"
   Given -> @deps =
-    process: @process
-    console: @console
-    commands: {}
+    process: => @process
+    console: => @console
   Given -> @args = []
 
   When  -> @cli = require('./../lib/cli').inject @deps
@@ -33,7 +32,7 @@ describe '$ soon', ->
       And   -> expect(@process.exit).to.have.been.calledWith 1
 
     describe '--version', ->
-      Given -> @deps.packageVersion = 'zulu.foxtrot.tango'
+      Given -> @deps.packageVersion = -> 'zulu.foxtrot.tango'
       Given -> @args = ['--version']
 
       Then  -> expect(@out).to.match /^soon zulu.foxtrot.tango\s$/
@@ -46,6 +45,10 @@ describe '$ soon', ->
       And   -> expect(@process.exit).not.to.have.been.called
 
   describe 'commands', ->
+    Given -> @blort = spy()
+    Given -> @deps.commands = =>
+      blort: @blort
+
     describe 'an unknown command', ->
       Given -> @args = ['snarf']
 
@@ -55,6 +58,4 @@ describe '$ soon', ->
 
     describe 'a known command', ->
       Given -> @args = ['blort']
-      Given -> @deps.commands.blort = @blort = spy()
-
       Then  -> expect(@blort).to.have.been.called
