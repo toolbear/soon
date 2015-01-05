@@ -3,3 +3,4 @@
 --reporter min
 --colors
 --compilers coffee:coffee-script/register
+--require mocha-clean/brief
