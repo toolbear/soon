@@ -7,3 +7,5 @@ module.exports =
     completion: require './cli/commands/completion'
     ls:         require './cli/commands/ls'
     work:       require './cli/commands/work'
+
+  tasks:          -> require './tasks'
