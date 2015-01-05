@@ -8,4 +8,5 @@ module.exports =
     ls:         require './cli/commands/ls'
     work:       require './cli/commands/work'
 
+  lexMarkdown:    -> require('marked').lexer
   tasks:          -> require './tasks'

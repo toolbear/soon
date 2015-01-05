@@ -12,7 +12,9 @@
     "type": "git",
     "url":  "https://github.com/toolbear/soon.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "marked": "^0.3.2"
+  },
   "devDependencies": {
     "coffee-script": "^1.8.0",
     "mocha": "^2.1.0",
