@@ -90,3 +90,27 @@ describe '#markdownTasks(doc)', ->
         * [ ] mail - upgrade it
         '''
       Then -> expect(@tasks).has.length 3
+
+    xdescribe 'test these cases', ->
+      Given -> @doc = '''
+        ## Nested 2
+
+        * [ ] depth=1 #1
+          * [ ] depth=2
+            * [ ] depth=3
+        * [ ] depth=1 #2
+
+        ## "Loose"
+
+        * [ ] loose 1
+
+        * [ ] loose 2
+
+        * [ ] loose 3
+
+        ## Prose
+
+        * [ ] I like turtles
+
+          Timmah!
+        '''
